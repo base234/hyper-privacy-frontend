@@ -1,4 +1,4 @@
-# Hyper Privacy frontend
+# Hyper Privacy - Frontend
 
 A next-generation ad recommendation engine that delivers hyper-relevant suggestions leaving your personal data in your device.
 
