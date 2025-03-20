@@ -2,6 +2,8 @@
 
 A next-generation ad recommendation engine that delivers hyper-relevant suggestions leaving your personal data in your device.
 
+Backend: [https://github.com/base234/hyper-privacy-backend](https://github.com/base234/hyper-privacy-backend)
+
 ## Overview
 
 Traditional Ad targeting relies on collecting vast amounts of data which also includes your personal data, thus creating privacy concerns.
