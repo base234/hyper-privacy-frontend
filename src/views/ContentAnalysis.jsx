@@ -11,6 +11,7 @@ const ContentAnalysis = () => {
   const [recommendedAds, setRecommendedAds] = useState([]);
   const [contentTopics, setContentTopics] = useState([]);
   const [privacyMetrics, setPrivacyMetrics] = useState({});
+  const [isResultAvailable, setIsResultAvailable] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const sampleContent = {
@@ -55,6 +56,7 @@ As we move forward, collaboration between technologists, policymakers, and ethic
     setRecommendedAds([]);
     setContentTopics([]);
     setPrivacyMetrics({});
+    setIsResultAvailable(false);
 
     const payload = {
       data: {
@@ -72,6 +74,8 @@ As we move forward, collaboration between technologists, policymakers, and ethic
         setPrivacyMetrics(
           (prevPrivacyMetrics) => response.data.privacy_metrics
         );
+
+        setIsResultAvailable(true);
       })
       .catch((error) => {
         setResults({ error: error.message });
@@ -154,8 +158,12 @@ As we move forward, collaboration between technologists, policymakers, and ethic
               <h2 className="text-xl font-semibold mb-4">
                 Content Analysis Results
               </h2>
-
-              {!isLoading && (
+              {!isResultAvailable && (
+                <div className="h-64 p-4 text-sm text-gray-300 border border-dashed border-gray-300 rounded-lg flex items-center justify-center">
+                  <p>Your analysis result will appear here</p>
+                </div>
+              )}
+              {isResultAvailable && (
                 <Fragment>
                   {privacyMetrics.anonymization_applied && (
                     <div className="mt-4 mb-6">
