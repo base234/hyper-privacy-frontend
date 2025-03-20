@@ -1,12 +1,35 @@
-# React + Vite
+# Hyper Privacy frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A next-generation ad recommendation engine that delivers hyper-relevant suggestions leaving your personal data in your device.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Traditional Ad targeting relies on collecting vast amounts of data which also includes your personal data, thus creating privacy concerns.
 
-## Expanding the ESLint configuration
+The project creates effective Ad recommendations while respecting user privacy. It uses contextual analysis and privacy-preserving techniques (Privacy Layer) to provide relevant recommendations without tracking users.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Getting started with the project
+
+### Clone the repo
+```
+git clone git@github.com:base234/hyper-privacy-frontend.git
+```
+
+### Navigate to the directory
+```
+cd hyper-privacy-frontend
+```
+
+### Install packages
+```
+npm install
+```
+
+### Start the app
+```
+npm run dev
+```
+
+**Note**: The backend should be running.
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

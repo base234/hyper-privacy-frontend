@@ -157,37 +157,39 @@ As we move forward, collaboration between technologists, policymakers, and ethic
 
               {!isLoading && (
                 <Fragment>
-                  <div className="mt-4 mb-6">
-                    <h3 className="text-lg font-semibold text-gray-700 mb-2">
-                      Privacy Metrics
-                    </h3>
-                    <div className="mt-4 flex flex-col space-y-2">
-                      <p className="text-sm text-gray-600">
-                        Anonymization:{" "}
-                        {privacyMetrics.anonymization_applied ? (
-                          <span className="text-green-600">Yes</span>
-                        ) : (
-                          <span className="text-red-600">No</span>
-                        )}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        Differential Privacy:{" "}
-                        {privacyMetrics.differential_privacy_applied ? (
-                          <span className="text-green-600">Yes</span>
-                        ) : (
-                          <span className="text-red-600">No</span>
-                        )}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        Local Processing:{" "}
-                        {privacyMetrics.local_processing_simulated ? (
-                          <span className="text-green-600">Yes</span>
-                        ) : (
-                          <span className="text-red-600">No</span>
-                        )}
-                      </p>
+                  {privacyMetrics.anonymization_applied && (
+                    <div className="mt-4 mb-6">
+                      <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                        Privacy Metrics
+                      </h3>
+                      <div className="mt-4 flex flex-col space-y-2">
+                        <p className="text-sm text-gray-600">
+                          Anonymization:{" "}
+                          {privacyMetrics.anonymization_applied ? (
+                            <span className="text-green-600">Yes</span>
+                          ) : (
+                            <span className="text-red-600">No</span>
+                          )}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Differential Privacy:{" "}
+                          {privacyMetrics.differential_privacy_applied ? (
+                            <span className="text-green-600">Yes</span>
+                          ) : (
+                            <span className="text-red-600">No</span>
+                          )}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          Local Processing:{" "}
+                          {privacyMetrics.local_processing_simulated ? (
+                            <span className="text-green-600">Yes</span>
+                          ) : (
+                            <span className="text-red-600">No</span>
+                          )}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                   {contentTopics.length > 0 && (
                     <div className="mt-10 mb-6">
                       <h3 className="text-lg font-semibold text-gray-700 mb-2">
@@ -217,7 +219,9 @@ As we move forward, collaboration between technologists, policymakers, and ethic
                             className="px-4 pt-3 pb-4 border border-gray-200 flex flex-col rounded-lg"
                           >
                             <span className="text-xs font-semibold bg-gray-100 text-gray-600">
-                              <span className="font-normal">Relevance Score: </span>
+                              <span className="font-normal">
+                                Relevance Score:{" "}
+                              </span>
                               {(recommendedAd.relevance_score * 100).toFixed(
                                 1
                               ) > 75 ? (
