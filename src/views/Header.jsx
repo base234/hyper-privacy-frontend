@@ -15,16 +15,25 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <NavLink to="/content-analysis" className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer">
+          <NavLink
+            to="/content-analysis"
+            className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer"
+          >
             Content Analysis
           </NavLink>
-          <NavLink to="/how-it-works" className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer">
+          <NavLink
+            to="/how-it-works"
+            className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer"
+          >
             How it works
           </NavLink>
-          <button className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer">
+          <a
+            href="https://github.com/base234/hyper-privacy-frontend"
+            className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer"
+          >
             <i className="fa-brands fa-github fa-fw mr-1"></i>
             <span>Github</span>
-          </button>
+          </a>
         </div>
       </div>
     </header>
