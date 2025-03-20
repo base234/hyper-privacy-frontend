@@ -30,6 +30,6 @@ npm install
 npm run dev
 ```
 
-**Note**: The backend should be running.
+**Note**: Make sure, the backend must be running.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
