@@ -37,6 +37,7 @@ export default function Footer() {
           <div className="flex items-center space-x-2">
             <a
               href="https://github.com/base234/hyper-privacy-frontend"
+              target="_blank"
               className="text-white/80 hover:text-white flex items-center space-x-2"
             >
               <i className="fa-brands fa-github fa-fw"></i>

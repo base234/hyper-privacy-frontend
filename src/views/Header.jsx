@@ -29,6 +29,7 @@ export default function Header() {
           </NavLink>
           <a
             href="https://github.com/base234/hyper-privacy-frontend"
+            target="_blank"
             className="text-sm text-gray-500 hover:text-gray-700 underline underline-offset-4 decoration-dashed decoration-gray-300 hover:decoration-gray-600 cursor-pointer"
           >
             <i className="fa-brands fa-github fa-fw mr-1"></i>
