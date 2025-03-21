@@ -78,7 +78,7 @@ As we move forward, collaboration between technologists, policymakers, and ethic
         setIsResultAvailable(true);
       })
       .catch((error) => {
-        setResults({ error: error.message });
+        setResults(prevResult => false);
       })
       .finally(() => {
         setTimeout(() => {
