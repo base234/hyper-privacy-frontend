@@ -4,6 +4,9 @@ A next-generation ad recommendation engine that delivers hyper-relevant suggesti
 
 Backend: [https://github.com/base234/hyper-privacy-backend](https://github.com/base234/hyper-privacy-backend)
 
+![Hyper Privacy](./docs/SCR_1.png)
+
+
 ## Overview
 
 Traditional Ad targeting relies on collecting vast amounts of data which also includes your personal data, thus creating privacy concerns.
@@ -73,3 +76,11 @@ The application includes a web interface to interact with the application in a u
 1. Enter webpage content
 2. See the recommended ads
 3. The **relevance score** and how it **targeted the Ads**, thus shows how privacy is preserved.
+
+# Screenshots
+### Homepage
+![Homepage](./docs/SCR_1.png)
+### Working Demo
+![Working Demo](./docs/SCR_2.png)
+### How it works
+![How it works](./docs/SCR_3.png)
